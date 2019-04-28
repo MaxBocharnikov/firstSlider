@@ -1,0 +1,93 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+.wrapper {
+  width: 80%;
+  min-width: 320px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slider--active {
+  display: block;
+}
+
+.fadeIn {
+  animation: slideIn 2s;
+  animation-fill-mode: forwards;
+}
+
+.slide__image {
+  width: 100%;
+  height: auto;
+  max-height: 487px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: 45%;
+
+  border: 15px solid transparent;
+  cursor: pointer;
+}
+  
+.arrow--left {
+  border-right: 10px solid #000;
+  left: -10%;
+}
+
+.arrow--right {
+  border-left: 10px solid #000;
+  right: -10%;
+}
+
+.arrow:hover {
+  opacity: 0.6;
+}
+
+.points {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  margin-left: -22px;
+}
+
+.point {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+
+  margin-right: 5px;
+
+  background: #000;
+  border: 3px solid #000;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.point--active {
+  background-color: #fff;
+}
